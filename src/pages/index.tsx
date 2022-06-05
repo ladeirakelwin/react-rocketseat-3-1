@@ -105,7 +105,6 @@ export const getStaticProps: GetStaticProps = async ({}) => {
   const postsResponse = await prismic.getByType('posts', {
     pageSize: 5,
   });
-  console.log(postsResponse.next_page);
 
   const postsPagination = {
     next_page: postsResponse.next_page,

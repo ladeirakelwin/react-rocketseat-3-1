@@ -1,1 +1,50 @@
-// TODO
+.mainPost {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+
+  .logoDiv {
+    width: 100%;
+    .logo{
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  .header {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    > div{
+      display: flex;
+      margin-top: 1rem;
+
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      .icons {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .block {
+      line-height: 1.5rem;
+
+      h2 {
+        margin-bottom: 2rem;
+      }
+
+      p + p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
